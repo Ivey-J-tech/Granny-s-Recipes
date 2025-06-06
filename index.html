@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Granny's Kitchen</title>
+
+    <!-- css custom file link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <header>
+      <a href="#" class="logo"
+        ><i class="fa-solid fa-utensils"></i>Granny's Kitchen</a
+      >
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <div id="saved-section">
+        <button id="savedToggle" title="View saved recipes">
+          <i class="fa-solid fa-heart"></i>
+          <span id="savedCount">0</span>
+        </button>
+
+        <div id="savedDropdown">
+          <p><strong>Saved Recipes</strong></p>
+          <ul id="savedList"></ul>
+          <hr />
+          <a href="save-for-later.html" class="view-all">View All Saved →</a>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <ul class="main-menu">
+          <li><a href="#home">Home</a></li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#featured-recipes"
+              >Featured Recipes <span class="arrow">▼</span></a
+            >
+            <ul class="dropdown-menu">
+              <li><a href="#grilled-chicken">Grilled Chicken</a></li>
+              <li><a href="#custard">Strawberry Custard</a></li>
+              <li><a href="#butter-chicken">Butter Chicken</a></li>
+              <li><a href="#vetkoek">Vetkoek</a></li>
+              <li><a href="#cocktails">Cocktails</a></li>
+              <li><a href="#baked-bread">Baked Bread</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#gallery-section">Gallery</a></li>
+          <li><a href="#order-section">Order</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>food made with love</h3>
+        <p>
+          Step into a world of cherished family recipes, where every dish
+          carries the love and wisdom of generations past. Whether you’re
+          craving comfort food, looking for time-honored cooking tips, or simply
+          reminiscing about the aroma of freshly baked bread, you’re in the
+          right place.
+        </p>
+        <a href="#" class="btn">order your recipe</a>
+      </div>
+
+      <div class="image">
+        <img src="images1/g1.jpg" alt="landing page burger" />
+      </div>
+    </section>
+    <!-- home section ends-->
+
+    <!-- About Starts -->
+    <section class="about-block">
+      <div class="content">
+        <h2>Welcome to Granny’s Kitchen</h2>
+        <p>
+          Welcome to Granny’s Kitchen—where South African tradition meets
+          irresistible home cooking! Our time-honored recipes bring the warmth
+          of family and the flavors of nostalgia straight to your table. Ready
+          to cook up some magic?
+        </p>
+      </div>
+    </section>
+
+    <section class="promise-block">
+      <div class="content">
+        <h2>Our Promise to You</h2>
+        <p>
+          At Granny’s Kitchen, every recipe starts with fresh ingredients,
+          bursts with authentic South African flavors, and comes with a warm
+          welcome. Whether you're trying a dish for the first time or returning
+          for a familiar favorite, our kitchen feels like home. Ready to cook up
+          something delicious?
+        </p>
+      </div>
+    </section>
+    <!-- About Ends -->
+
+    <!-- recipes section starts -->
+    <section class="recipes" id="featured-recipes">
+      <h1 class="heading">Featured <span>Recipes</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images1/dish-3.jpg" alt="chicken Grilled" />
+          <h3>Chicken Grilled</h3>
+          <button class="save-later-btn" title="Save for later">
+            <!-- heart icon is the "save-for-later/ ear mark"-->
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            Grandma’s Secret Grilled Chicken Recipe – A Taste of Tradition!
+            Juicy, smoky, and packed with flavor.Simple ingredients,
+            unforgettable taste.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images1/dish-4.jpg" alt="chicken-salad" />
+          <h3>Chicken Salad</h3>
+
+          <!-- save-for-later button-->
+          <button class="save-later-btn" title="Save for later">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <!-- like -->
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            A classic family favorite, packed with tender chicken, crisp
+            veggies, and a creamy dressing that brings it all together.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images1/dish-1.jpg" alt="Strawberry Custard" />
+          <h3>Strawberry Custard</h3>
+          <!-- save-for-later button-->
+          <button class="save-later-btn" title="Save for later">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <!-- like -->
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            Indulge in velvety smooth custard, kissed with the natural sweetness
+            of ripe strawberries. Rich, creamy, and bursting with fruity
+            goodness
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images1/dish-2.jpg" alt="Butter Chicken" />
+          <h3>Butter Chicken</h3>
+          <!-- save-for-later button-->
+          <button class="save-later-btn" title="Save for later">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <!-- like -->
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            Tender chicken simmered in a luxuriously creamy, spiced tomato
+            sauce—this recipe is pure magic. Perfectly balanced flavors,
+            restaurant-quality taste, and easy-to-follow steps make it a
+            must-have for every home cook.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images1/fish-dish.jpg" alt="fish dish salad" />
+          <h3>Grilled Fish Salad</h3>
+          <!-- save-for-later button-->
+          <button class="save-later-btn" title="Save for later">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <!-- like -->
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            A refreshing, protein-packed meal, featuring perfectly grilled fish,
+            crisp greens, and a zesty dressing that ties it all together.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images1/dish-5.jpg" alt="Vetkoeks" />
+          <h3>Vetkoeks- Amagwinya</h3>
+          <!-- save-for-later button-->
+          <button class="save-later-btn" title="Save for later">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <!-- like -->
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            Light, fluffy, and perfectly golden, these South African delights
+            are crispy on the outside, soft on the inside.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images1/c3.jpg" alt="Vetkoeks" />
+          <h3>Cocktails</h3>
+          <!-- save-for-later button-->
+          <button class="save-later-btn" title="Save for later">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <!-- like -->
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            Rainbow Paradise Cocktail – A stunning layered drink with grenadine,
+            pineapple juice, and blue curaçao. Whiskey Sour – A classic blend of
+            whiskey, lemon juice, and maple syrup.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images1/dish-6.jpg" alt="Vetkoeks" />
+          <h3>Baked Bread</h3>
+          <!-- save-for-later button-->
+          <button class="save-later-btn" title="Save for later">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <!-- like -->
+          <button class="like-btn" title="Like">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+          <br />
+          <button class="btn viewMoreBtn">View More</button>
+          <p class="extraText">
+            Nothing beats the aroma of freshly baked bread! A simple, foolproof
+            recipe with a soft, airy texture. A classic recipe with detailed
+            instructions for both new and experienced bakers.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- recipes section ends -->
+
+    <!-- steps section starts-->
+    <section class="steps">
+      <div class="box">
+        <img src="images1/logo.png" alt="choose recipe" />
+        <h3>choose your favorite recipe</h3>
+      </div>
+
+      <div class="box">
+        <img src="images1/c4.jpg" alt="email image" />
+        <h3>receive your recipe in your email</h3>
+      </div>
+
+      <div class="box">
+        <img src="images1/c5.jpg" alt="payment image" />
+        <h3>easy payment methods</h3>
+      </div>
+
+      <div class="box">
+        <img src="images1/c6.jpg" alt="lady cooking" />
+        <h3>
+          and finally turn your home into a restaurant with Grandma’s Kitchen
+          recipes
+        </h3>
+      </div>
+    </section>
+    <!-- steps section ends-->
+
+    <!-- gallery section starts -->
+
+    <section class="gallery" id="gallery-section">
+      <h1 class="heading">Grandma’s Dishes <span>gallery</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images1/g13.jpg" alt="sago pudding" />
+          <div class="content">
+            <h3>Baked Sago Pudding</h3>
+            <p>
+              Baked Sago Pudding – A warm, oven-baked version with a rich,
+              custard-like texture.
+            </p>
+            <a
+              href="https://www.food.com/recipe/south-african-baked-sago-pudding-216804"
+              class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g2.jpg" alt="potjie kos" />
+          <div class="content">
+            <h3>Potjie Kos</h3>
+            <p>
+              Classic Potjiekos – A slow-cooked lamb dish with potatoes,
+              carrots, and tomatoes.
+            </p>
+            <a href="https://potjiekosworld.com/recipes/" class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g3.jpg" alt="koeksisters" />
+          <div class="content">
+            <h3>Koeksisters</h3>
+            <p>
+              Traditional Malay Koeksisters – Spiced with cinnamon, cardamom,
+              and aniseed for a rich flavor.
+            </p>
+            <a href="https://bitsofcarey.com/cape-malay-koesisters/" class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g4.jpg" alt="chakalaka and pap" />
+          <div class="content">
+            <h3>Chakalaka and Pap</h3>
+            <p>
+              A smooth, hearty maize porridge that pairs beautifully with
+              chakalaka.
+            </p>
+            <a
+              href="https://www.kitchenfrau.com/lesotho-chakalaka-pap/"
+              class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g5.jpg" alt="bunny chow" />
+          <div class="content">
+            <h3>Bunny Chow</h3>
+            <p>
+              Bunny Chow is a South African street food—a hollowed-out loaf of
+              bread filled with curry.
+            </p>
+            <a href="https://www.africanbites.com/bunny-chow/" class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g6.jpg" alt="milk tart" />
+          <div class="content">
+            <h3>Milk Tart</h3>
+            <p>
+              Granny's Milk Tart – A baked milk tart recipe with a crisp,
+              buttery base.
+            </p>
+            <a
+              href="https://www.allrecipes.com/recipe/80160/south-african-melktert-milk-tart/"
+              class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g7.jpg" alt="samp and beans" />
+          <div class="content">
+            <h3>Samp and Beans</h3>
+            <p>
+              South African Samp and Beans (Umngqusho) – A traditional Xhosa
+              recipe loved by Nelson Mandela.
+            </p>
+            <a href="https://freshkitchen.co.za/samp-and-beans/" class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g8.jpg" alt="cocktail" />
+          <div class="content">
+            <h3>Springbok Cocktail</h3>
+            <p>
+              The Springbok cocktail is a South African favorite, named after
+              the national rugby team.
+            </p>
+            <a
+              href="https://rainbowcooking.co.nz/recipes/springbok-shooters-springbokkies"
+              class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g9.jpg" alt="tomato bredie" />
+          <div class="content">
+            <h3>Tomato Bredie</h3>
+            <p>
+              Classic Tomato Bredie – A Cape Malay version with tender mutton
+              and a rich tomato-based gravy.
+            </p>
+            <a
+              href="https://www.allrecipes.com/recipe/68735/tomato-bredie/"
+              class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g10.jpg" alt="Biltong" />
+          <div class="content">
+            <h3>Biltong</h3>
+            <p>Classic Biltong – Simple, straightforward, and full of taste.</p>
+            <a
+              href="https://www.greedyferret.com/perfect-biltong-recipe-south-african-beef-jerky"
+              class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g11.jpg" alt="Gatsby" />
+          <div class="content">
+            <h3>Gatsby</h3>
+            <p>
+              Masala Steak Gatsby – Tender steak marinated in spices and
+              peri-peri sauce
+            </p>
+            <a href="https://taste.co.za/recipes/the-iconic-gatsby/" class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images1/g12.jpg" alt="ice-cream" />
+          <div class="content">
+            <h3>Ice-Cream</h3>
+            <p>
+              Coffee Ice Cream – A bold, flavorful dessert for coffee lovers.
+            </p>
+            <a
+              href="https://www.loveandlemons.com/homemade-ice-cream-recipe/"
+              class="btn"
+              >View Recipe</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+      <h1 class="heading">our customers <span>reviews</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/review1.jpg" alt="" />
+          <h3>David M.</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            "Just like home! Every bite takes me back to my childhood, sitting
+            at grandma’s kitchen table. The apple pie is perfection!"
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/review2.jpg" alt="" />
+          <h3>Sophia L</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            "Pure comfort food! The Sunday Roast recipe is now a staple in our
+            home. Juicy, flavorful, and brings the whole family together."
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/review3.jpg" alt="" />
+          <h3>Chris T</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            "Warm and nostalgic!" The simple recipes, the rich flavors, and the
+            love behind every meal—it’s like a hug from the past."
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- order section starts -->
+    <section class="order" id="order-section">
+      <h1 class="heading">Place Your <span>Order</span></h1>
+
+      <div class="order-instructions">
+        <h3>Before You Order:</h3>
+        <ul>
+          <li>✅ Choose your favorite recipe from our menu</li>
+          <li>✅ Fill in your correct contact details</li>
+          <li>✅ Double-check your email address</li>
+          <li>✅ Click submit and wait for a confirmation in your mail</li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="image">
+          <img src="images1/r1.jpg" alt="reception lady" />
+        </div>
+
+        <form action="get">
+          <div class="inputBox">
+            <label for="username"></label>
+            <input type="text" placeholder="name" id="theUserName" />
+
+            <label for="useremail"></label>
+            <input type="email" placeholder="email" id="useremail" />
+          </div>
+
+          <div class="inputBox">
+            <label for="usernumber"></label>
+            <input type="number" placeholder="number" id="usernumber" />
+
+            <label for="userrequest"></label>
+            <input type="text" placeholder="food name" id="userrequest" />
+          </div>
+
+          <textarea
+            placeholder="leave a comment"
+            name="user-personal"
+            id="user-personal"
+            cols="40"
+            rows="10"
+          ></textarea>
+
+          <button type="submit" value="order your recipe" class="btn">
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- My Contact section starts -->
+      <div class="contact-details" id="contact-section">
+        <h3>Contact Information</h3>
+        <ul>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> 123 Granny Street, Cape Town,
+            South Africa
+          </li>
+          <li><i class="fas fa-phone-alt"></i> +27 65 123 4567</li>
+          <li><i class="fas fa-envelope"></i> contact@grannyskitchen.co.za</li>
+          <li><i class="fas fa-clock"></i> Mon - Fri: 8am - 6pm</li>
+        </ul>
+      </div>
+      <!-- My Contact section ends -->
+    </section>
+    <!-- order section ends -->
+
+    <!--Why Choose Granny's Kitchen starts-->
+    <section class="why-choose-us" id="why-choose">
+      <h1 class="heading">Why Choose <span>Granny's Kitchen</span></h1>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Granny's Kitchen</th>
+              <th>Other Restaurants</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Authentic South African Recipes</td>
+              <td>✅ 100% Homemade</td>
+              <td>❌ Mostly Commercial</td>
+            </tr>
+            <tr>
+              <td>Family-Friendly Atmosphere</td>
+              <td>✅ Warm & Welcoming</td>
+              <td>❌ Often Busy & Noisy</td>
+            </tr>
+            <tr>
+              <td>Traditional Cooking Methods</td>
+              <td>✅ Cooked with Love</td>
+              <td>❌ Industrial Prep</td>
+            </tr>
+            <tr>
+              <td>Affordable Prices</td>
+              <td>✅ Value for Money</td>
+              <td>❌ Overpriced</td>
+            </tr>
+            <tr>
+              <td>Customer Reviews</td>
+              <td>✅ 5-Star Ratings</td>
+              <td>❌ Mixed Feedback</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!--Why Choose Granny's Kitchen ends-->
+
+    <!-- Subscription starts -->
+    <section class="subscribe" id="subscribe">
+      <h1 class="heading">Subscribe for <span>Recipe Updates</span></h1>
+
+      <form action="get">
+        <h3>What types of recipes would you like to receive?</h3>
+
+        <div class="radio-group">
+          <label>
+            <input
+              type="radio"
+              name="recipe-type"
+              value="traditional"
+              checked
+            />
+            Traditional South African
+          </label>
+          <label>
+            <input type="radio" name="recipe-type" value="desserts" />
+            Sweet Desserts
+          </label>
+          <label>
+            <input type="radio" name="recipe-type" value="quick-meals" />
+            Quick & Easy Meals
+          </label>
+          <label>
+            <input type="radio" name="recipe-type" value="vegetarian" />
+            Vegetarian Options
+          </label>
+        </div>
+
+        <input type="submit" value="Subscribe" class="btn" />
+      </form>
+    </section>
+    <!-- Subscription ends -->
+
+    <!-- Comment Form starts-->
+    <section class="interaction-section">
+      <h2>Share Your Thoughts</h2>
+
+      <form class="comment-form" id="commentForm">
+        <label for="username">Your Name</label>
+        <input
+          type="text"
+          id="username"
+          name="nameOfUser"
+          placeholder="Granny Mabel"
+          required
+        />
+
+        <label for="commentText">Your Comment</label>
+        <textarea
+          id="commentText"
+          name="comment"
+          rows="4"
+          placeholder="Tell us what you think..."
+          required
+        ></textarea>
+
+        <button type="submit" class="submit-btn">Post Comment</button>
+      </form>
+
+      <div id="commentList"></div>
+    </section>
+
+    <!-- footer section starts here -->
+    <section class="footer">
+      <div class="share">
+        <a href="https://github.com/Ivey-J-tech" class="btn">facebook</a>
+        <a href="https://github.com/Ivey-J-tech" class="btn">twitter</a>
+        <a href="https://github.com/Ivey-J-tech" class="btn">instagram</a>
+        <a href="https://github.com/Ivey-J-tech" class="btn">linkedin</a>
+      </div>
+
+      <h1 class="credit">
+        created by <span>Iverson Jose</span>| all rights reserved
+      </h1>
+    </section>
+    <!-- footer section ends here -->
+
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="main.js"></script>
+  </body>
+</html>
