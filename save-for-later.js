@@ -1,15 +1,17 @@
 const savedContainer = document.getElementById("savedContainer");
-let savedItems = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+//changed variable name to "savedRecipes"
+let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 
 function renderSavedItems() {
   savedContainer.innerHTML = "";
+  savedRecipes;
 
-  if (savedItems.length === 0) {
+  if (savedRecipes.length === 0) {
     savedContainer.innerHTML = "<p>You haven't saved any recipes yet.</p>";
     return;
   }
 
-  savedItems.forEach((item, index) => {
+  savedRecipes.forEach((item, index) => {
     const box = document.createElement("div");
     box.className = "box";
     box.innerHTML = `
@@ -20,10 +22,10 @@ function renderSavedItems() {
 
     // Add / remove recipes functionality
     box.querySelector(".remove-btn").addEventListener("click", () => {
-      savedItems.splice(index, 1);
-      localStorage.setItem("savedRecipes", JSON.stringify(savedItems));
+      savedRecipes.splice(index, 1);
+      localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
       renderSavedItems();
-      alert(`Removed. ${savedItems.length} recipes(s) remain.`);
+      alert(`Removed. ${savedRecipes.length} recipes(s) remain.`);
     });
 
     savedContainer.appendChild(box);
