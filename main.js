@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Menu toggle
+  // Menu toggle functionality
   const $menu = $("#menu-bar");
   const $navbar = $(".navbar");
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
     $navbar.removeClass("active");
   });
 
-  // View More / View Less toggle
+  // View More / View Less toggle functionality
   $(".viewMoreBtn").click(function () {
     const $paragraph = $(this).next(".extraText");
     $paragraph.slideToggle("slow");
@@ -52,7 +52,7 @@ $(document).ready(function () {
     }
   );
 
-  // Comments: handle form submission using jQuery
+  // Comments Section: handle form submission using jQuery
   const $form = $("#commentForm");
   const $usernameInput = $("#username");
   const $commentInput = $("#commentText");
@@ -102,12 +102,12 @@ $(document).ready(function () {
     const index = savedItems.findIndex((item) => item.name === recipeName);
 
     if (index === -1) {
-      // Save item
+      // Save item functionality
       savedItems.push({ name: recipeName, image: imageSrc });
       $heartIcon.removeClass("fa-regular").addClass("fa-solid");
       alert(`Saved! You now have ${savedItems.length} recipe(s) saved.`);
     } else {
-      // Remove item
+      // Remove item functionality
       savedItems.splice(index, 1);
       $heartIcon.removeClass("fa-solid").addClass("fa-regular");
       alert(`Removed! You now have ${savedItems.length} recipe(s) saved.`);
@@ -117,7 +117,7 @@ $(document).ready(function () {
     updateSavedDropdown();
   });
 
-  // Saved recipes dropdown
+  // Saved recipes dropdown functionality
   const $savedToggle = $("#savedToggle");
   const $savedDropdown = $("#savedDropdown");
   const $savedCount = $("#savedCount");
@@ -148,7 +148,7 @@ $(document).ready(function () {
   // Initialize saved recipes dropdown on load
   updateSavedDropdown();
 
-  // like button
+  // like button functionality
   $(".like-btn").click(function () {
     const icon = $(this).find("i");
 
